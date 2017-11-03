@@ -1,0 +1,19 @@
+<template>
+  <require from="./styles.css"></require>
+  <require from="./company"></require>
+  
+  <div class="container">
+    <img src="https://thelott.com/etc/designs/the-lott/components/structure/page-template/clientlibs/images/header/logo--dsktp-thelott-australias.png"
+      alt="The Lott logo" title="the Lott, Australia's Official Lotteries">
+    <p>Please select your lottery provider</p>
+    <ul class="list">
+      <li class="list-item" repeat.for="company of companies">
+        <div class="logo">
+          <img src=${company.logoUrl} alt="logo">
+        </div>
+        <p>${company.description}</p>
+        <span class="arrow">></span>
+      </li>
+    </ul>
+  </div>
+</template>
