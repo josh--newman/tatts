@@ -1,10 +1,8 @@
-import { bindable } from 'aurelia-framework';
-
 export class Company {
   id: string;
   displayName: string;
-  @bindable description: string;
-  @bindable logoUrl: string;
+  description: string;
+  logoUrl: string;
   
   constructor(company) {
     this.id = company.CompanyId;

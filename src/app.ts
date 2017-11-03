@@ -1,11 +1,9 @@
-import { Todo } from './todo';
 import { inject } from 'aurelia-framework';
 import { Company } from './company';
 import API from './api';
 
 @inject (API)
 export class App {
-  title = "The Lott";
   companies: Company[] = [];
   
   constructor(private api: API) {}
